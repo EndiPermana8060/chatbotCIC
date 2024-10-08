@@ -121,14 +121,10 @@ class DataRecapper:
         # Group data by relevant columns and get the total counts
         grouped = df.groupby(['STATE', 'TYPE', 'LOKASI', 'CONTAINER GRADE']).size().reset_index(name='count')
 
-        # Menggabungkan data dengan informasi yang serupa
-        summary_dict = grouped.groupby(['STATE', 'TYPE', 'CONTAINER GRADE']).agg({
-            'count': 'sum', 
-            'LOKASI': lambda x: ', '.join(x.unique())
-        }).reset_index()
+        dict_grouped = grouped.to_dict(orient='records')
 
         text = ''
-        for entry in summary_dict.to_dict(orient='records'):
+        for entry in dict_grouped:
             state = entry['STATE']
             type_ = entry['TYPE']
             grade_ = entry['CONTAINER GRADE']
