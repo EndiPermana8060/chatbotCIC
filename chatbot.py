@@ -17,7 +17,7 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 class DataRecapper:
     def __init__(self):
         # Initialize the class with default MySQL connection details, which are fetched from environment variables.
-        self.username = 'root'
+        self.username = os.getenv('USERNAME')
         self.password = os.getenv('PASSWORD')  # MySQL password loaded from environment.
         self.host = os.getenv('HOST')  # MySQL host loaded from environment.
         self.database = os.getenv('DATABASE')  # Database name loaded from environment.
@@ -196,7 +196,3 @@ class DataRecapper:
             if connection:
                 connection.close()
                 print("Connection closed.")
-                
-    
-    
-                
