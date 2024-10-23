@@ -1,0 +1,11 @@
+Location = {
+    'AMBON' : ['AMB-AMBON', 'AMB-TPK'],
+    'JAKARTA' : ['JKT-MARUNDA', 'JKT-PERCA', 'JKT-LINI ADP', 'JKT-PNP 208-213',
+       'JKT-MM2100', 'JKT-PNP 004 DSN', 'JKT-217', 'JKT-JKT',
+       'JKT-MSA', 'JKT-KA-LOG', 'JKT-MBP'],
+    'SURABAYA' : ['SBY-TAMBAK LANGON', 'SBY-TELUK BAYUR', 'SBY-JAPFA', 'SBY-YON',
+       'SBY-DEPO 4', 'SBY-DPL', 'SBY-PKS-7', 'SBY-KALIANAK',
+       'SBY-TPS', 'SBY-TELUK LAMONG', 'SBY-BJTI', 'SBY-NILAM',
+       'SBY-SBY'],
+    'BATAM' : ['BTM- TEMSCO', 'BTM- BTM']
+}
